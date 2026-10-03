@@ -49,3 +49,20 @@ describe("Blog articles", () => {
     expect(screen.getByRole("heading", { level: 1 })).toBeInTheDocument();
   });
 });
+
+describe("BlogIndex lists all 6 articles", () => {
+  it("shows new AI scheduling article", () => {
+    render(<MemoryRouter><BlogIndex /></MemoryRouter>);
+    expect(screen.getByText("How AI Scheduling Saves 10+ Hours Per Week")).toBeInTheDocument();
+  });
+
+  it("shows new automated booking article", () => {
+    render(<MemoryRouter><BlogIndex /></MemoryRouter>);
+    expect(screen.getByText("The Complete Guide to Automated Appointment Booking")).toBeInTheDocument();
+  });
+
+  it("shows new customer satisfaction article", () => {
+    render(<MemoryRouter><BlogIndex /></MemoryRouter>);
+    expect(screen.getByText("5 Ways Smart Scheduling Boosts Customer Satisfaction")).toBeInTheDocument();
+  });
+});

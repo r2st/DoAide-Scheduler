@@ -8,6 +8,7 @@ const TOOLS = [
   { key: "calculator", label: "Meeting Cost Calculator", desc: "Let visitors calculate how much their meetings cost" },
   { key: "templates", label: "Scheduling Templates", desc: "Showcase scheduling page templates on your website" },
   { key: "timezone", label: "Timezone Converter", desc: "Let visitors convert meeting times across timezones" },
+  { key: "availability", label: "Availability Finder", desc: "Let visitors find overlapping available meeting slots" },
 ];
 
 export default function EmbedPage() {

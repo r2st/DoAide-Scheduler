@@ -183,6 +183,17 @@ export default function TimezonePage() {
             )}
           </div>
 
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "DoAide World Timezone Converter",
+            "url": "https://scheduler.doaide.com/tools/timezone-converter",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "description": "Convert meeting times across world timezones and find overlapping business hours. Free, no sign-up required.",
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+          }) }} />
+
           <section className="tool-info">
             <h2>Scheduling Across Timezones</h2>
             <p>

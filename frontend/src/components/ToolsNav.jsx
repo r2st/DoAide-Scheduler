@@ -1,9 +1,10 @@
 import { Link, useLocation } from "react-router-dom";
 
 const TOOLS = [
-  { path: "/calculator", label: "Meeting Cost" },
+  { path: "/tools/meeting-cost-calculator", label: "Meeting Cost" },
   { path: "/templates-gallery", label: "Templates" },
-  { path: "/timezone", label: "Timezone" },
+  { path: "/tools/timezone-converter", label: "Timezone" },
+  { path: "/tools/availability-finder", label: "Availability" },
 ];
 
 export default function ToolsNav() {

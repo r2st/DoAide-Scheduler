@@ -14,6 +14,7 @@ import PublicBookingPage from "./pages/PublicBookingPage";
 import MeetingCalculatorPage from "./pages/MeetingCalculatorPage";
 import SchedulingTemplatesPage from "./pages/SchedulingTemplatesPage";
 import TimezonePage from "./pages/TimezonePage";
+import AvailabilityFinderPage from "./pages/AvailabilityFinderPage";
 import EmbedPage from "./pages/EmbedPage";
 import BlogLayout, { ARTICLES, BlogIndex } from "./pages/BlogLayout";
 
@@ -41,8 +42,11 @@ export default function App() {
 
       {/* Free tools */}
       <Route path="/calculator" element={<MeetingCalculatorPage />} />
+      <Route path="/tools/meeting-cost-calculator" element={<MeetingCalculatorPage />} />
       <Route path="/templates-gallery" element={<SchedulingTemplatesPage />} />
       <Route path="/timezone" element={<TimezonePage />} />
+      <Route path="/tools/timezone-converter" element={<TimezonePage />} />
+      <Route path="/tools/availability-finder" element={<AvailabilityFinderPage />} />
       <Route path="/embed" element={<EmbedPage />} />
       <Route path="/blog" element={<BlogLayout />}>
         <Route index element={<BlogIndex />} />

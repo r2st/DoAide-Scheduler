@@ -113,6 +113,17 @@ export default function MeetingCalculatorPage() {
             </div>
           </div>
 
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "DoAide Meeting Cost Calculator",
+            "url": "https://scheduler.doaide.com/tools/meeting-cost-calculator",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "description": "Calculate how much your meetings really cost. Free, no sign-up required.",
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+          }) }} />
+
           <section className="tool-info">
             <h2>Why Meeting Costs Matter</h2>
             <p>
