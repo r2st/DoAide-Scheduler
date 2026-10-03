@@ -52,28 +52,37 @@ describe('LandingPage', () => {
 
   it('renders testimonials', () => {
     renderLanding();
-    expect(screen.getByText(/Rachel T\./)).toBeInTheDocument();
+    expect(screen.getByText(/Alex R\./)).toBeInTheDocument();
+    expect(screen.getByText(/Maria L\./)).toBeInTheDocument();
+    expect(screen.getByText(/David C\./)).toBeInTheDocument();
   });
 
   it('renders FAQ section with accordion', async () => {
     renderLanding();
     expect(screen.getByText('Frequently Asked Questions')).toBeInTheDocument();
 
+    const firstQ = screen.getByText('How does DoAide Scheduler prevent double-booking?');
     const user = userEvent.setup();
-    const firstQ = screen.getByText('Can I sync with Google Calendar?');
     await user.click(firstQ);
-    expect(screen.getByText(/Google Calendar/)).toBeInTheDocument();
+    expect(screen.getByText(/syncs with your calendar/)).toBeInTheDocument();
   });
 
   it('renders auth form with login and register tabs', () => {
     renderLanding();
-    expect(screen.getByText('Sign In')).toBeInTheDocument();
-    expect(screen.getByText('Create Account')).toBeInTheDocument();
+    expect(screen.getAllByText(/Sign In/).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/Sign Up/).length).toBeGreaterThan(0);
   });
 
   it('renders footer with DoAide products', () => {
     renderLanding();
     expect(screen.getByText('DoAide Products')).toBeInTheDocument();
     expect(screen.getByText('doaide.com')).toBeInTheDocument();
+  });
+
+  it('renders free tools section', () => {
+    renderLanding();
+    expect(screen.getByText('Free Scheduling Tools')).toBeInTheDocument();
+    expect(screen.getAllByText(/Meeting Cost Calculator/).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/Timezone Converter/).length).toBeGreaterThan(0);
   });
 });

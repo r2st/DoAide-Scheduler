@@ -11,6 +11,11 @@ import TeamPage from "./pages/TeamPage";
 import SettingsPage from "./pages/SettingsPage";
 import PricingPage from "./pages/PricingPage";
 import PublicBookingPage from "./pages/PublicBookingPage";
+import MeetingCalculatorPage from "./pages/MeetingCalculatorPage";
+import SchedulingTemplatesPage from "./pages/SchedulingTemplatesPage";
+import TimezonePage from "./pages/TimezonePage";
+import EmbedPage from "./pages/EmbedPage";
+import BlogLayout, { ARTICLES, BlogIndex } from "./pages/BlogLayout";
 
 function Protected({ children }) {
   const { user, loading } = useAuth();
@@ -33,6 +38,17 @@ export default function App() {
   return (
     <Routes>
       <Route path="/book/:businessSlug/:meetingSlug" element={<PublicBookingPage />} />
+
+      {/* Free tools */}
+      <Route path="/calculator" element={<MeetingCalculatorPage />} />
+      <Route path="/templates-gallery" element={<SchedulingTemplatesPage />} />
+      <Route path="/timezone" element={<TimezonePage />} />
+      <Route path="/embed" element={<EmbedPage />} />
+      <Route path="/blog" element={<BlogLayout />}>
+        <Route index element={<BlogIndex />} />
+        {ARTICLES.map(a => <Route key={a.slug} path={a.slug} element={<a.component />} />)}
+      </Route>
+
       <Route
         path="/"
         element={user ? <Navigate to="/dashboard" replace /> : <LandingPage />}

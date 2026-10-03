@@ -420,6 +420,34 @@ export default function LandingPage() {
           </div>
         </section>
 
+        <section className="py-20 px-4 sm:px-6 bg-gray-50 dark:bg-[#111113]" aria-labelledby="tools-heading">
+          <div className="max-w-5xl mx-auto">
+            <h2 id="tools-heading" className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-4">
+              Free Scheduling Tools
+            </h2>
+            <p className="text-gray-600 dark:text-gray-400 text-center mb-14 max-w-xl mx-auto">
+              No signup required. Use these tools instantly to optimize your meetings.
+            </p>
+            <div className="grid md:grid-cols-3 gap-8">
+              <Link to="/calculator" className="p-6 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#0A0A0B] hover:border-[#F0B429]/50 transition-colors no-underline group">
+                <div className="text-2xl mb-3">&#x1F4B0;</div>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-[#F0B429] transition-colors">Meeting Cost Calculator</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Find out how much your meetings really cost per year.</p>
+              </Link>
+              <Link to="/templates-gallery" className="p-6 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#0A0A0B] hover:border-[#F0B429]/50 transition-colors no-underline group">
+                <div className="text-2xl mb-3">&#x1F4C4;</div>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-[#F0B429] transition-colors">Scheduling Templates</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">6 ready-made templates for standups, demos, interviews, and more.</p>
+              </Link>
+              <Link to="/timezone" className="p-6 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#0A0A0B] hover:border-[#F0B429]/50 transition-colors no-underline group">
+                <div className="text-2xl mb-3">&#x1F30D;</div>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-[#F0B429] transition-colors">Timezone Converter</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Convert meeting times across timezones with overlap detection.</p>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         <FaqSection />
 
         <section className="py-20 px-4 sm:px-6 text-center bg-gray-50 dark:bg-[#111113]">
@@ -450,10 +478,13 @@ export default function LandingPage() {
               </div>
             </div>
             <div>
-              <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-3">Company</h4>
+              <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-3">Free Tools</h4>
               <div className="space-y-2 text-sm">
-                <a href="https://doaide.com" className="block text-gray-500 dark:text-gray-400 hover:text-[#F0B429] no-underline">About DoAide</a>
-                <a href="mailto:support@doaide.com" className="block text-gray-500 dark:text-gray-400 hover:text-[#F0B429] no-underline">Contact</a>
+                <Link to="/calculator" className="block text-gray-500 dark:text-gray-400 hover:text-[#F0B429] no-underline">Meeting Cost Calculator</Link>
+                <Link to="/templates-gallery" className="block text-gray-500 dark:text-gray-400 hover:text-[#F0B429] no-underline">Scheduling Templates</Link>
+                <Link to="/timezone" className="block text-gray-500 dark:text-gray-400 hover:text-[#F0B429] no-underline">Timezone Converter</Link>
+                <Link to="/embed" className="block text-gray-500 dark:text-gray-400 hover:text-[#F0B429] no-underline">Embed Widgets</Link>
+                <Link to="/blog" className="block text-gray-500 dark:text-gray-400 hover:text-[#F0B429] no-underline">Blog</Link>
               </div>
             </div>
             <div className="col-span-2">
