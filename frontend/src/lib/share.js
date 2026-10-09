@@ -36,7 +36,7 @@ export async function copyToClipboard(text) {
 }
 
 export function embedSnippet(tool) {
-  const paths = { calculator: "/tools/meeting-cost-calculator", templates: "/templates-gallery", timezone: "/tools/timezone-converter", availability: "/tools/availability-finder" };
+  const paths = { calculator: "/tools/meeting-cost-calculator", templates: "/templates-gallery", timezone: "/tools/timezone-converter", availability: "/tools/availability-finder", "meeting-planner": "/tools/meeting-planner", "weekly-planner": "/tools/weekly-planner" };
   const path = paths[tool] || "/tools/meeting-cost-calculator";
   return `<iframe src="${ORIGIN}${path}" width="100%" height="500" style="border:none;border-radius:12px" title="DoAide Scheduler – ${tool}"></iframe>`;
 }

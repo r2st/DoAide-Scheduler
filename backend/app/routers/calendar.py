@@ -75,7 +75,7 @@ def list_connections(
     ]
 
 
-@router.delete("/connections/{connection_id}", status_code=status.HTTP_204_NO_CONTENT)
+@router.delete("/connections/{connection_id}", status_code=status.HTTP_204_NO_CONTENT, response_model=None)
 def disconnect(
     connection_id: int,
     user: User = Depends(get_current_user),

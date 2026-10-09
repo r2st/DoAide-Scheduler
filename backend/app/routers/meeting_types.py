@@ -101,7 +101,7 @@ def update_meeting_type(
     return MeetingTypeOut.model_validate(mt)
 
 
-@router.delete("/{meeting_type_id}", status_code=status.HTTP_204_NO_CONTENT)
+@router.delete("/{meeting_type_id}", status_code=status.HTTP_204_NO_CONTENT, response_model=None)
 def delete_meeting_type(
     meeting_type_id: int,
     user: User = Depends(get_current_user),

@@ -40,6 +40,9 @@ class Settings(BaseSettings):
     openrouter_base_url: str = "https://openrouter.ai/api/v1"
     openrouter_model: str = "openai/gpt-oss-20b:free"
 
+    gemini_api_key: str = ""
+    gemini_model: str = "gemini-3.8-flash"
+
     google_client_id: str = ""
     google_client_secret: str = ""
     google_redirect_uri: str = "http://localhost:8000/api/v1/calendar/callback"

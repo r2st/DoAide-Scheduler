@@ -434,15 +434,30 @@ export default function LandingPage() {
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-[#F0B429] transition-colors">Meeting Cost Calculator</h3>
                 <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Find out how much your meetings really cost per year.</p>
               </Link>
-              <Link to="/templates-gallery" className="p-6 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#0A0A0B] hover:border-[#F0B429]/50 transition-colors no-underline group">
-                <div className="text-2xl mb-3">&#x1F4C4;</div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-[#F0B429] transition-colors">Scheduling Templates</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">6 ready-made templates for standups, demos, interviews, and more.</p>
+              <Link to="/tools/meeting-planner" className="p-6 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#0A0A0B] hover:border-[#F0B429]/50 transition-colors no-underline group">
+                <div className="text-2xl mb-3">&#x1F916;</div>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-[#F0B429] transition-colors">AI Meeting Planner</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Generate structured meeting agendas with AI in seconds.</p>
+              </Link>
+              <Link to="/tools/weekly-planner" className="p-6 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#0A0A0B] hover:border-[#F0B429]/50 transition-colors no-underline group">
+                <div className="text-2xl mb-3">&#x1F4C5;</div>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-[#F0B429] transition-colors">Weekly Planner</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Plan your week with time-blocking and category tracking.</p>
               </Link>
               <Link to="/timezone" className="p-6 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#0A0A0B] hover:border-[#F0B429]/50 transition-colors no-underline group">
                 <div className="text-2xl mb-3">&#x1F30D;</div>
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-[#F0B429] transition-colors">Timezone Converter</h3>
                 <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Convert meeting times across timezones with overlap detection.</p>
+              </Link>
+              <Link to="/tools/availability-finder" className="p-6 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#0A0A0B] hover:border-[#F0B429]/50 transition-colors no-underline group">
+                <div className="text-2xl mb-3">&#x1F50D;</div>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-[#F0B429] transition-colors">Availability Finder</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Find overlapping available slots across multiple schedules.</p>
+              </Link>
+              <Link to="/templates-gallery" className="p-6 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#0A0A0B] hover:border-[#F0B429]/50 transition-colors no-underline group">
+                <div className="text-2xl mb-3">&#x1F4C4;</div>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-[#F0B429] transition-colors">Scheduling Templates</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">6 ready-made templates for standups, demos, interviews, and more.</p>
               </Link>
             </div>
           </div>
@@ -481,8 +496,11 @@ export default function LandingPage() {
               <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-3">Free Tools</h4>
               <div className="space-y-2 text-sm">
                 <Link to="/calculator" className="block text-gray-500 dark:text-gray-400 hover:text-[#F0B429] no-underline">Meeting Cost Calculator</Link>
-                <Link to="/templates-gallery" className="block text-gray-500 dark:text-gray-400 hover:text-[#F0B429] no-underline">Scheduling Templates</Link>
+                <Link to="/tools/meeting-planner" className="block text-gray-500 dark:text-gray-400 hover:text-[#F0B429] no-underline">AI Meeting Planner</Link>
+                <Link to="/tools/weekly-planner" className="block text-gray-500 dark:text-gray-400 hover:text-[#F0B429] no-underline">Weekly Planner</Link>
                 <Link to="/timezone" className="block text-gray-500 dark:text-gray-400 hover:text-[#F0B429] no-underline">Timezone Converter</Link>
+                <Link to="/tools/availability-finder" className="block text-gray-500 dark:text-gray-400 hover:text-[#F0B429] no-underline">Availability Finder</Link>
+                <Link to="/templates-gallery" className="block text-gray-500 dark:text-gray-400 hover:text-[#F0B429] no-underline">Scheduling Templates</Link>
                 <Link to="/embed" className="block text-gray-500 dark:text-gray-400 hover:text-[#F0B429] no-underline">Embed Widgets</Link>
                 <Link to="/blog" className="block text-gray-500 dark:text-gray-400 hover:text-[#F0B429] no-underline">Blog</Link>
               </div>

@@ -16,6 +16,8 @@ import SchedulingTemplatesPage from "./pages/SchedulingTemplatesPage";
 import TimezonePage from "./pages/TimezonePage";
 import AvailabilityFinderPage from "./pages/AvailabilityFinderPage";
 import EmbedPage from "./pages/EmbedPage";
+import MeetingSchedulerPage from "./pages/MeetingSchedulerPage";
+import WeeklyPlannerPage from "./pages/WeeklyPlannerPage";
 import BlogLayout, { ARTICLES, BlogIndex } from "./pages/BlogLayout";
 
 function Protected({ children }) {
@@ -47,6 +49,8 @@ export default function App() {
       <Route path="/timezone" element={<TimezonePage />} />
       <Route path="/tools/timezone-converter" element={<TimezonePage />} />
       <Route path="/tools/availability-finder" element={<AvailabilityFinderPage />} />
+      <Route path="/tools/meeting-planner" element={<MeetingSchedulerPage />} />
+      <Route path="/tools/weekly-planner" element={<WeeklyPlannerPage />} />
       <Route path="/embed" element={<EmbedPage />} />
       <Route path="/blog" element={<BlogLayout />}>
         <Route index element={<BlogIndex />} />

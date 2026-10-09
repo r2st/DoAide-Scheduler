@@ -5,8 +5,29 @@ import CalendarManagement from "./blog/CalendarManagement";
 import AiSchedulingSaves from "./blog/AiSchedulingSaves";
 import AutomatedBookingGuide from "./blog/AutomatedBookingGuide";
 import SmartSchedulingBoosts from "./blog/SmartSchedulingBoosts";
+import EffectiveOneOnOnes from "./blog/EffectiveOneOnOnes";
+import AiCalendarTools2026 from "./blog/AiCalendarTools2026";
+import WeeklyPlanningFramework from "./blog/WeeklyPlanningFramework";
 
 const ARTICLES = [
+  {
+    slug: "effective-one-on-one-meetings",
+    title: "How to Run Effective One-on-One Meetings",
+    description: "The structure, cadence, and common mistakes that separate productive one-on-ones from wasted time.",
+    component: EffectiveOneOnOnes,
+  },
+  {
+    slug: "ai-calendar-tools-2026",
+    title: "The Rise of AI Calendar Tools in 2026",
+    description: "How AI is changing scheduling — from intelligent time-blocking to natural language meeting requests.",
+    component: AiCalendarTools2026,
+  },
+  {
+    slug: "weekly-planning-framework",
+    title: "Weekly Planning: A Framework for Productive Weeks",
+    description: "Stop reacting to your calendar. A step-by-step framework for planning weeks that actually work.",
+    component: WeeklyPlanningFramework,
+  },
   {
     slug: "ai-scheduling-saves-time",
     title: "How AI Scheduling Saves 10+ Hours Per Week",

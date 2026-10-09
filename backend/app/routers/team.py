@@ -58,7 +58,7 @@ def add_member(
     return UserOut.model_validate(member)
 
 
-@router.delete("/members/{member_id}", status_code=status.HTTP_204_NO_CONTENT)
+@router.delete("/members/{member_id}", status_code=status.HTTP_204_NO_CONTENT, response_model=None)
 def remove_member(
     member_id: int,
     user: User = Depends(get_current_user),

@@ -69,7 +69,7 @@ def update_rule(
     return AvailabilityRuleOut.model_validate(rule)
 
 
-@router.delete("/{rule_id}", status_code=status.HTTP_204_NO_CONTENT)
+@router.delete("/{rule_id}", status_code=status.HTTP_204_NO_CONTENT, response_model=None)
 def delete_rule(
     rule_id: int,
     user: User = Depends(get_current_user),

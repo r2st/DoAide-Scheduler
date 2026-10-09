@@ -11,7 +11,7 @@ from fastapi.middleware.gzip import GZipMiddleware
 import app.models  # noqa: F401
 from app.core.config import settings
 from app.core.database import check_database, engine
-from app.routers import auth, availability, bookings, calendar, health, meeting_types, notifications, public, team
+from app.routers import auth, availability, bookings, calendar, health, meeting_types, notifications, public, team, tools
 
 logger = logging.getLogger(__name__)
 
@@ -74,6 +74,7 @@ def create_app() -> FastAPI:
     application.include_router(public.router, prefix=prefix)
     application.include_router(team.router, prefix=prefix)
     application.include_router(notifications.router, prefix=prefix)
+    application.include_router(tools.router, prefix=prefix)
 
     @application.get("/", include_in_schema=False)
     def root() -> dict:

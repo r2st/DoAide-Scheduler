@@ -5,6 +5,8 @@ const TOOLS = [
   { path: "/templates-gallery", label: "Templates" },
   { path: "/tools/timezone-converter", label: "Timezone" },
   { path: "/tools/availability-finder", label: "Availability" },
+  { path: "/tools/meeting-planner", label: "AI Planner" },
+  { path: "/tools/weekly-planner", label: "Weekly Plan" },
 ];
 
 export default function ToolsNav() {
