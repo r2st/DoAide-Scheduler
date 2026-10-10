@@ -8,6 +8,9 @@ import SmartSchedulingBoosts from "./blog/SmartSchedulingBoosts";
 import EffectiveOneOnOnes from "./blog/EffectiveOneOnOnes";
 import AiCalendarTools2026 from "./blog/AiCalendarTools2026";
 import WeeklyPlanningFramework from "./blog/WeeklyPlanningFramework";
+import BestFreeSchedulingTools2026 from "./blog/BestFreeSchedulingTools2026";
+import ScheduleMeetingsAcrossTimezones from "./blog/ScheduleMeetingsAcrossTimezones";
+import AppointmentSchedulingSmallBusinessesIndia from "./blog/AppointmentSchedulingSmallBusinessesIndia";
 
 const ARTICLES = [
   {
@@ -63,6 +66,24 @@ const ARTICLES = [
     title: "Calendar Management Tips for Busy Professionals",
     description: "Take control of your calendar with time-blocking, buffer zones, and smart defaults.",
     component: CalendarManagement,
+  },
+  {
+    slug: "best-free-scheduling-tools-2026",
+    title: "Best Free Scheduling Tools 2026: Compare Calendly vs DoAide vs Others",
+    description: "An in-depth comparison of the best free scheduling tools in 2026. See how Calendly, DoAide, Cal.com, and others stack up on features, pricing, and AI.",
+    component: BestFreeSchedulingTools2026,
+  },
+  {
+    slug: "schedule-meetings-across-time-zones",
+    title: "How to Schedule Meetings Across Time Zones: Complete Guide",
+    description: "Proven strategies for cross-timezone scheduling — tools, etiquette, rotating schedules, DST handling, and async alternatives.",
+    component: ScheduleMeetingsAcrossTimezones,
+  },
+  {
+    slug: "appointment-scheduling-small-businesses-india",
+    title: "Appointment Scheduling for Small Businesses in India",
+    description: "A practical guide to digital appointment scheduling for Indian clinics, salons, consultants, and tutors — with WhatsApp workflows and INR pricing.",
+    component: AppointmentSchedulingSmallBusinessesIndia,
   },
 ];
 
